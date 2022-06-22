@@ -4,46 +4,116 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>WAE Stars Generator</title>
+    <link rel="stylesheet" href="./stylesheets/style.css">
 </head>
 <body>
+<div class="main">
+    <div class="wrapper">
+        <div class="tile">
+            <div class="tile__title">
+                <h1 class="title title-big">Create your own stars</h1>
+                <span>Welcome back! Please enter your details.</span>
+            </div>
+            <form id="account" class="tile__form">
+
+                <div class="tile-grid">
+                    <div class="tile-grid-item">
+                        <label for="company">Firmenname</label>
+                        <input type="text" placeholder="Firmenname" id="company" name="company">
+                    </div>
+                    <div class="tile-grid-item">
+                        <label for="mybusiness">MyBusiness Link</label>
+                        <input type="text" placeholder="MyBusiness Link" id="mybusiness" name="mybusiness">
+                    </div>
+                    <div class="tile-grid-item">
+                        <label for="domain">Domain</label>
+                        <input type="text" placeholder="example.com" id="domain" name="domain">
+                    </div>
+                    <div class="tile-grid-item">
+                        <label for="meta">Meta Description</label>
+                        <input type="text" placeholder="Meta Description" id="meta" name="meta">
+                    </div>
+                    <div class="tile-grid-item">
+                        <label for="logo">Link zum Logo</label>
+                        <input type="text" placeholder="Link zum Logo" id="logo" name="logo">
+                    </div>
+                    <div class="tile-grid-item">
+                        <label for="average">Durchschnitt</label>
+                        <input type="number" class="rating" id="average" min="0" max="5" placeholder="0 - 5">
+                        <label for="best">Bestes</label>
+                        <input type="number" class="rating" id="best" min="0" max="5" placeholder="0 - 5">
+                        <label for="worst">Schlechtestes</label>
+                        <input type="number" class="rating" id="worst" min="0" max="5" placeholder="0 - 5">
+                        <label for="count">Anzahl</label>
+                        <input type="number" class="rating" id="count" min="0" max="5" placeholder="0 - 5">
+                    </div>
+                </div>
+                <h3>Reviews</h3>
+                <div class="tile-grid">
+                    <div class="tile-grid-item">
+                        <label for="name-1">Name</label>
+                        <div class="tile-grid-item-flex">
+                            <input type="text" class="name" placeholder="Name" id="name-1" name="name-1">
+                            <input type="number" class="rating" id="rating-1" min="0" max="5" placeholder="0 - 5">
+                        </div>
+                        <input type="text" id="description-1" placeholder="Review Beschreibung" class="description">
+                        <label for="description-1" style="margin-top: 2%">Beschreibung</label>
+                    </div>
+                    <div class="tile-grid-item">
+                        <label for="name-2">Name</label>
+                        <div class="tile-grid-item-flex">
+                            <input type="text" class="name" placeholder="Name" id="name-2" name="name-2">
+                            <input type="number" class="rating" id="rating-2" min="0" max="5" placeholder="0 - 5">
+                        </div>
+                        <input type="text" id="description-2" placeholder="Review Beschreibung" class="description">
+                        <label for="description-2" style="margin-top: 2%">Beschreibung</label>
+                    </div>
+                    <div class="tile-grid-item">
+                        <label for="name-3">Name</label>
+                        <div class="tile-grid-item-flex">
+                            <input type="text" class="name" placeholder="Name" id="name-3" name="name-3">
+                            <input type="number" class="rating" id="rating-3" min="0" max="5" placeholder="0 - 5">
+                        </div>
+                        <input type="text" id="description-3" placeholder="Review Beschreibung" class="description">
+                        <label for="description-3" style="margin-top: 2%">Beschreibung</label>
+                    </div>
+                    <div class="tile-grid-item">
+                        <label for="name-4">Name</label>
+                        <div class="tile-grid-item-flex">
+                            <input type="text" class="name" placeholder="Name" id="name-4" name="name-4">
+                            <input type="number" class="rating" id="rating-4" min="0" max="5" placeholder="0 - 5">
+                        </div>
+                        <input type="text" id="description-4" placeholder="Review Beschreibung" class="description">
+                        <label for="description-4" style="margin-top: 2%">Beschreibung</label>
+                    </div>
+                    <div class="tile-grid-item">
+                        <label for="name-5">Name</label>
+                        <div class="tile-grid-item-flex">
+                            <input type="text" class="name" placeholder="Name" id="name-5" name="name-5">
+                            <input type="number" class="rating" id="rating-5" min="0" max="5" placeholder="0 - 5">
+                        </div>
+                        <input type="text" id="description-5" placeholder="Review Beschreibung" class="description">
+                        <label for="description-5" style="margin-top: 2%">Beschreibung</label>
+                    </div>
+                    <div class="tile-grid-item" style="flex-flow: row;align-items: center">
+                        <button id="submit" class="btn btn-base">Create Star Snippet</button>
+                    </div>
+                    <div class="tile-grid-item" style="flex-flow: row;align-items: center">
+                        <div id="result">
 
 
-<form action="">
-    <label for="name">
-        <span>Unternehmensname</span>
-        <input type="text" placeholder="Unternehmensname" name="name" id="name">
-    </label>
-    <label for="mybusiness">
-        <span>Rezensions Link</span>
-        <input type="text" placeholder="Rezensions Link" name="mybusiness" id="mybusiness">
-    </label>
-    <div class="tile tile-1">
-        <label for="brating">
-            <span>Best Rating</span>
-            <input type="text" placeholder="Rezensions Link" name="brating" id="brating">
-        </label>
+                        </div>
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+
+
     </div>
-    <div class="tile tile-2">
-        <label for="wrating">
-            <span>Worst Rating</span>
-            <input type="text" placeholder="Rezensions Link" name="wrating" id="wrating">
-        </label>
-    </div>
-    <div class="tile tile-3"></div>
-    <div class="tile tile-4"></div>
-    <label for="mybusiness">
-        <span>Rezensions Link</span>
-        <input type="text" placeholder="Rezensions Link" name="mybusiness" id="mybusiness">
-    </label>
-    <label for="mybusiness">
-        <span>Rezensions Link</span>
-        <input type="text" placeholder="Rezensions Link" name="mybusiness" id="mybusiness">
-    </label>
+</div>
 
-
-</form>
-
-
-
+<script src="./scripts/scripts.js"></script>
 </body>
 </html>

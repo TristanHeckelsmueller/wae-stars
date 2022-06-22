@@ -1,0 +1,5 @@
+{
+  "watchFolder": "./public/stylesheets",
+  "mainFile": "style.less",
+  "outputFolder": "../dist"
+}
